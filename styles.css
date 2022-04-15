@@ -1,0 +1,47 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #fdfdff;
+}
+
+
+.navbar {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 2s ease-out;
+}
+
+.active-navbar {
+    display: flex;
+    transition: all 2s ease-out;
+}
+
+.a-nav {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    margin: 20px;
+    transition: all 0.5s ease-out;
+}
+
+.bar {
+    display: flex;
+    margin-left: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+  
+@media all and (min-width: 800px) {
+    .bar {
+        display: none;
+    }
+}
