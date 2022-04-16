@@ -34,6 +34,12 @@ nav ul li a {
     text-decoration: none;
     letter-spacing: 1px;
     transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    border-bottom: 1px solid black;
+    opacity: 0.2;
 }
 
 
@@ -60,6 +66,7 @@ nav .menu-btn i {
 
 }
 
+
 .heading {
     /* background-color: #7f7efb; */
     background-color: #5268f2;
@@ -67,7 +74,7 @@ nav .menu-btn i {
     flex-direction: column;
     align-items: center;
     color: #fff;
-    padding: 20%;
+    padding: 10%;
 }
   
 .btn-start {
@@ -76,13 +83,68 @@ nav .menu-btn i {
     text-transform: uppercase;
     color: #fff;
     border: 1px solid #fff;
+    transition: all 0.3s ease;
 }
 
-.heading > h1 {
+.btn-start:hover {
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+}
+
+.h1-tizone{
     font-size: 44px;
 }
 
+.p-heading {
+    text-align: center;
+}
 
+.careers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.h2-career {
+    text-transform: uppercase;
+} 
+
+.career {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.career-icon {
+    font-size: 34px;
+}
+
+/* .flex-career {
+    display: flex;
+    flex-direction: column;
+} */
+
+@media all and (min-width: 900px) {
+    .flex-career {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media all and (min-width: 800px){
+    .h1-tizone {
+        font-size: 60px;
+    }
+
+    .p-heading {
+        font-size: 30px;
+    }
+}
 
 @media (max-width: 940px) {
     nav ul {
