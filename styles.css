@@ -48,7 +48,7 @@ nav .menu-btn i {
     cursor: pointer;
     display: none;
     position: absolute;
-    visibility:hidden;
+    visibility: hidden;
 }
 
 #click {
@@ -63,9 +63,12 @@ nav .menu-btn i {
     display: none;
     position: absolute;
     visibility:hidden;
-
 }
 
+
+.flex-career {
+    width: 80%;
+}
 
 .heading {
     /* background-color: #7f7efb; */
@@ -122,10 +125,48 @@ nav .menu-btn i {
     font-size: 34px;
 }
 
-/* .flex-career {
+.h2-test {
+    text-align: center;
+}
+
+.test {
     display: flex;
     flex-direction: column;
-} */
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.img {
+    width: 50%;
+    height: 200px;
+    background-color: black;
+    
+}
+
+.arrows {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.arrow {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+@media all and (min-width: 1200px) {
+    .flex-test {
+        flex-direction: row;
+    }
+
+    .arrows {
+        width: 50%;
+    }
+}
 
 @media all and (min-width: 900px) {
     .flex-career {
