@@ -71,7 +71,6 @@ nav .menu-btn i {
 }
 
 .heading {
-    /* background-color: #7f7efb; */
     background-color: #5268f2;
     display: flex;
     flex-direction: column;
@@ -171,6 +170,39 @@ nav .menu-btn i {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.img-ranking {
+    background-color: red;
+    width: 10%;
+    height: 100px;
+}
+
+.about-me {
+    background-color: #5268f2;
+    width: 100%;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img-about {
+    width: 30%;
+    height: 40%;
+    border-radius: 50px;
+}
+
+.h3-about {
+    text-transform: uppercase;
+}
+
+@media all and (min-width: 1200px) {
+    
 }
 
 @media all and (min-width: 1200px) {
