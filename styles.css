@@ -110,9 +110,9 @@ nav .menu-btn i {
     align-items: center;
 }
 
-.h2-career {
+/* .h2-career {
     text-transform: uppercase;
-} 
+}  */
 
 .career {
     display: flex;
@@ -143,6 +143,13 @@ nav .menu-btn i {
     
 }
 
+.flex-test {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .arrows {
     display: flex;
     flex-direction: column;
@@ -156,11 +163,20 @@ nav .menu-btn i {
     flex-direction: row;
     gap: 10px;
     align-items: center;
+    justify-content: center;
+}
+
+.ranking {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 @media all and (min-width: 1200px) {
     .flex-test {
         flex-direction: row;
+        margin-top: 50px;
     }
 
     .arrows {
