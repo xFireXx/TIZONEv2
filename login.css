@@ -17,7 +17,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50%;
+    margin-top: 20%;
 }
 
 .login-flex {
@@ -60,4 +60,75 @@ body {
     border: 2px solid #000;
     border-radius: 50px;
     padding: 5px;
+}
+
+.a-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.a-login > a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.a-login > a:hover, #remind-password:hover {
+    opacity: 0.5;
+}
+
+#remind-password {
+    background: transparent;
+    border: 0;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.remind-password-popup {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    width: 60%;
+    height: 200px;
+    background: #fff;
+    -webkit-box-shadow: 3px 7px 24px 0 rgba(66, 68, 90, 1);
+    -moz-box-shadow: 3px 7px 24px 0 rgba(66, 68, 90, 1);
+    box-shadow: 3px 7px 24px 0 rgba(66, 68, 90, 1);
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    cursor: pointer;
+}
+
+@media all and (min-width: 360px) {
+    .remind-password-popup {
+        width: 80%;
+    }
+}
+
+@media all and (min-width: 800px) {
+    .remind-password-popup {
+        width: 60%;
+        top: 20%;
+    }
+}
+
+@media all and (min-width: 1280px) {
+    .remind-password-popup {
+        width: 60%;
+        top: 30%;
+    }
+}
+
+@media all and (min-width: 667px) {
+    .login {
+        margin-top: 5%;
+    }
 }
