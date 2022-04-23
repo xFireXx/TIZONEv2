@@ -11,6 +11,10 @@ body {
     background-color: #fdfdff;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 nav {
     height: 80px;
@@ -62,7 +66,7 @@ nav .menu-btn i {
     left: 20px;
     display: none;
     position: absolute;
-    visibility:hidden;
+    visibility: hidden;
 }
 
 
@@ -78,7 +82,7 @@ nav .menu-btn i {
     color: #fff;
     padding: 10%;
 }
-  
+
 .btn-start {
     padding: 10px;
     background-color: transparent;
@@ -94,7 +98,7 @@ nav .menu-btn i {
     cursor: pointer;
 }
 
-.h1-tizone{
+.h1-tizone {
     font-size: 44px;
 }
 
@@ -139,7 +143,7 @@ nav .menu-btn i {
     width: 50%;
     height: 200px;
     background-color: black;
-    
+
 }
 
 .flex-test {
@@ -234,6 +238,41 @@ nav .menu-btn i {
 
 .form {
     width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-input {
+    border: 2px solid #000;
+    margin: 5% 0;
+}
+
+.contact-textarea {
+    border: 2px solid #000;
+    margin: 5% 0;
+}
+
+.contact-btn {
+    padding: 5px;
+    width: 50%;
+    margin-bottom: 5%;
+    background: transparent;
+    cursor: pointer;
+    border: 2px solid #5268f2;
+    transition: all 0.3s ease-in;
+}
+
+.contact-btn:hover {
+    color: #fff;
+    background: #5268f2;
 }
 
 @media all and (min-width: 1280px) {
@@ -241,6 +280,26 @@ nav .menu-btn i {
         flex-direction: row;
         justify-content: space-around;
     }
+
+    .contact-input {
+        padding: 10px;
+    }
+
+    .contact-textarea {
+        padding: 15px;
+    }
+
+    .description {
+        font-size: 20px;
+    }
+}
+
+.footer {
+    padding: 8px;
+    text-align: center;
+    background-color: #464646;
+    color: #fff;
+    margin-top: 5%;
 }
 
 @media all and (min-width: 800px) {
@@ -297,7 +356,7 @@ nav .menu-btn i {
     }
 }
 
-@media all and (min-width: 800px){
+@media all and (min-width: 800px) {
     .h1-tizone {
         font-size: 60px;
     }
@@ -322,13 +381,14 @@ nav .menu-btn i {
 
     .bar {
         display: block;
-        visibility:visible;
+        visibility: visible;
         position: static;
     }
 
     #click:checked ~ .menu-btn i:before {
         content: "\f00d";
     }
+
     #click:checked ~ ul {
         left: 0%;
     }
@@ -339,7 +399,7 @@ nav .menu-btn i {
 
     nav ul li {
         margin: 40px 0;
-        
+
     }
 
     nav ul li a {
