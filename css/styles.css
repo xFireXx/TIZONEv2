@@ -15,6 +15,15 @@ html {
     scroll-behavior: smooth;
 }
 
+.h2-section {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.p-section {
+    margin-top: -10px;
+    text-align: center;
+}
 
 nav {
     height: 80px;
@@ -64,14 +73,13 @@ nav .menu-btn i {
     margin-left: 10px;
     font-size: 30px;
     left: 20px;
-    display: none;
     position: absolute;
     visibility: hidden;
 }
 
 
 .flex-career {
-    width: 80%;
+    width: 50%;
 }
 
 .heading {
@@ -111,6 +119,7 @@ nav .menu-btn i {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 /* .h2-career {
@@ -122,6 +131,7 @@ nav .menu-btn i {
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
+    width: 100%;
 }
 
 .career-icon {
