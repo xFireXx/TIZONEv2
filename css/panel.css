@@ -16,6 +16,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: 1px solid #000;
+    width: 50%;
+    margin: 0 auto;
 }
 
 .profile-flex {
