@@ -21,4 +21,9 @@ body {
 .profile-flex {
     display: flex;
     flex-direction: row;
+    gap: 15px;
+}
+
+.red {
+    color: red;
 }
