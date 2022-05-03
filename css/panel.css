@@ -61,7 +61,39 @@ nav .menu-btn i {
     visibility: hidden;
 }
 
+.nickname {
+    color: crimson;
+    font-weight: bold;
+}
 
+.user-profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}
+
+.user {
+    background-color: crimson;
+    border-radius: 50px;
+    width: 90%;
+    margin-top: 10%;
+}
+
+.user:nth-child(2) {
+    background-color: #5268f2;
+}
+
+.user:nth-child(3) {
+    background-color: #6964e2;
+}
+
+.user:nth-child(4) {
+    background-color: #102b3e;
+}
 
 @media (max-width: 940px) {
     nav ul {
