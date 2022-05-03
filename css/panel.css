@@ -95,6 +95,40 @@ nav .menu-btn i {
     background-color: #102b3e;
 }
 
+.user:nth-child(5) {
+    background-color: #3ac6ea;
+}
+
+.flex-user {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+@media all and (min-width: 800px) {
+    .user {
+        width: 60%;
+    }
+}
+
+@media all and (min-width: 1080px) {
+    .flex-user {
+        flex-direction: row;
+    }
+
+    .flex-user:nth-child(2) {
+        flex-direction: row;
+    }
+
+    .user {
+        width: 30%;
+        margin-left: 20px;
+    }
+}
+
 @media (max-width: 940px) {
     nav ul {
         position: absolute;
@@ -106,12 +140,17 @@ nav .menu-btn i {
         text-align: left;
         transition: all 0.3s ease;
         background: #fff;
+        margin: 20px;
     }
 
     .bar {
         display: block;
         visibility: visible;
         position: static;
+    }
+
+    .nickname {
+        font-size: 25px;
     }
 
     #click:checked ~ .menu-btn i:before {
